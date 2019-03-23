@@ -50,7 +50,17 @@ while row:
         køn = "0"
     elif (row[5] == "Mand"):
         køn = "1"
-    med = "4"
+
+    #KONVERTER MEDARBEJDER INITIALER TIL INT
+    if (row[8] == "Kro"):
+        med = "2"
+    elif (row[8] == "sme"):
+        med = "3"
+    elif (row[8] == "cha"):
+        med = 1
+    elif (row[8] == "sny"):
+        med = "4"
+
     if (row[1] is None):
         row[1] = 'ukendt'
     if (row[2] is None):
